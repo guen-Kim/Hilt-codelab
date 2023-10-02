@@ -28,7 +28,7 @@ import javax.inject.Singleton
  */
 
 
-@Singleton
+@Singleton // Application Container - SingletonComponent
 class LoggerLocalDataSource @Inject constructor(private val logDao: LogDao) {
 
     private val executorService: ExecutorService = Executors.newFixedThreadPool(4)
